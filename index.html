@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"/>
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -20,6 +21,9 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="assets/css/modal.css" />
+    <link rel="stylesheet" href="assets/css/detail.css" />
+
 </head>
 
 <body>
@@ -37,10 +41,19 @@
         </div>
     </section>
 
+        <!-- pop out -->
+    <center>
+        <div class="pop-out-loading fade-out-loading" id="loading"></div>
+        <div class="pop-out-loading fade-out-loading" id="text-loading"></div>
+    </center>
+
     <!-- Nosso JS -->
+    <script src="assets/js/modal.js"></script>
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"> </script>
 </body>
 
 </html>
